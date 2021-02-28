@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lendo-server
+  labels:
+    type: http-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: lendo-server
+      labels:
+        app: http-server
+        type: http-server
+    spec:
+      containers:
+        - name: lendo-server
+          image: lendo/server
+  selector:
+    matchLabels:
+      app: http-server
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lendo-creatorjob
+  labels:
+    type: creatorjob
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: lendo-creatorjob
+      labels:
+        app: lendo-creatorjob
+        type: creatorjob
+    spec:
+      containers:
+        - name: lendo-creatorjob
+          image: lendo/creatorjob
+  selector:
+    matchLabels:
+      app: lendo-creatorjob
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lendo-cronjob
+  labels:
+    type: cronjob
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: lendo-cronjob
+      labels:
+        app: lendo-cronjob
+        type: cronjob
+    spec:
+      containers:
+        - name: lendo-cronjob
+          image: lendo/cronjob
+  selector:
+    matchLabels:
+      app: lendo-cronjob
