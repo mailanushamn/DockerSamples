@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T13:58:56.801Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="GwV0mqsChMANLQcqUFBe" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-02T14:01:28.193Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="BE1QpwfjjOVHvyk7TcV6" version="14.4.3" type="github">
   <diagram id="YX3Qmc5mIcwVC7KldEEO" name="Page-1">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -157,6 +157,9 @@
             <mxPoint x="512" y="135" as="sourcePoint" />
             <mxPoint x="260" y="135" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="lyBzS54nXXmUgzS3-u7w-52" value="Picks pending applications from DB and calls Job API to fetch updated status and updates DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="85" width="170" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
